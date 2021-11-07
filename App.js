@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet,View, Image, Text } from "react-native";
 
-export default function App() {
+const App = ()=> {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+       <View style={{ flexDirection: 'row' }}>
+         <Text>Hola</Text>
+              <Image  source={{uri:'https://facebook.github.io/react/logo-og.png'}}  style={{width: 400, height: 400}} />
+          </View>
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  
 });
+
+
+export default App;
